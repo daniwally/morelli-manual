@@ -820,7 +820,11 @@ footer{
 .variant.bone{background:var(--bone)}
 .variant.bone .morelli-mark{mix-blend-mode:multiply}
 .variant.brass{background:var(--brass)}
-.variant.brass .morelli-mark{mix-blend-mode:lighten}
+.variant.brass .morelli-mark{
+  mix-blend-mode:lighten;
+  background-size:100% auto;
+  background-position:top center;
+}
 .variant .var-label{position:absolute;top:14px;left:16px;font-family:'Geist Mono',monospace;font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--steel-3)}
 .variant.bone .var-label{color:var(--carbon)}
 .variant.brass .var-label{color:var(--carbon)}
@@ -1595,7 +1599,7 @@ footer{
     <div class="block">
       <span class="block-num">5.1 · Logo principal</span>
       <div class="block-body">
-        <p>El logo de Morelli combina el wordmark "Morelli" con la barra tricolor que ancla su origen italiano. Es <strong>indivisible</strong>: el wordmark y la barra siempre conviven en el lockup oficial.</p>
+        <p>El logo de Morelli combina el wordmark "Morelli" con la barra tricolor que ancla su origen italiano. En el lockup oficial el wordmark y la barra son <strong>indivisibles</strong> — solo la variante monocroma (5.3) puede prescindir de la barra en aplicaciones de excepción.</p>
       </div>
       <div class="logo-display">
         <div class="cell dark">
@@ -1652,7 +1656,7 @@ footer{
     <div class="block">
       <span class="block-num">5.3 · Variantes</span>
       <div class="block-body">
-        <p>Tres variantes oficiales según el contexto. La <strong>oscura</strong> es la primaria. La <strong>clara</strong> opera en fondos blancos o hueso. La de <strong>bronce</strong> funciona como sello premium en aplicaciones especiales — packaging hero de Magna, etiquetas de línea Vintage Touch, ediciones limitadas, materiales para arquitectos.</p>
+        <p>Tres variantes oficiales según el contexto. La <strong>oscura</strong> es la primaria: el lockup completo con barra tricolor sobre carbón. La <strong>clara</strong> opera con el mismo lockup completo en fondos blancos o hueso. La <strong>monocroma</strong> es la única excepción a la regla "wordmark + barra siempre conviven": se usa <em>sin barra tricolor</em> cuando la presencia de los tres colores compromete la legibilidad o la coherencia visual — packaging hero de Magna, sellos grabados en bronce o acero, ediciones limitadas, materiales POP en superficies de acabado especial.</p>
       </div>
       <div class="variants-grid">
         <div class="variant dark">
@@ -1667,8 +1671,8 @@ footer{
         </div>
         <div class="variant brass">
           <span class="var-label">Variante 03</span>
-          <div class="morelli-mark" style="width:200px;height:68px"></div>
-          <span class="var-name">Sello premium · sobre bronce</span>
+          <div class="morelli-mark" style="width:200px;height:58px"></div>
+          <span class="var-name">Monocroma · sobre bronce</span>
         </div>
       </div>
     </div>
@@ -1759,7 +1763,7 @@ footer{
         <div class="dont">
           <svg class="dont-cross" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><line x1="2" y1="2" x2="16" y2="16"/><line x1="16" y1="2" x2="2" y2="16"/></svg>
           <div class="show"><div style="font-family:'Geist',sans-serif;font-size:36px;font-weight:700;color:var(--bone);letter-spacing:-0.02em">Morelli</div></div>
-          <span class="desc">No usar sin<br>la barra tricolor</span>
+          <span class="desc">No recrear el wordmark<br>en otra tipografía</span>
         </div>
         <div class="dont">
           <svg class="dont-cross" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><line x1="2" y1="2" x2="16" y2="16"/><line x1="16" y1="2" x2="2" y2="16"/></svg>
