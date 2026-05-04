@@ -900,12 +900,14 @@ footer{
 .letterhead .lh-foot{font-family:'Geist Mono',monospace;font-size:6px;letter-spacing:0.15em;color:var(--steel-2);text-transform:uppercase;border-top:1px solid var(--steel-3);padding-top:10px}
 
 /* Email signature */
-.email-sig{width:340px;background:var(--carbon-2);border:1px solid var(--line);padding:18px 20px;display:flex;align-items:center;gap:16px}
-.email-sig .sig-mark{width:56px;height:56px;background:var(--ember);display:flex;align-items:center;justify-content:center;color:var(--carbon);font-family:'Fraunces',serif;font-size:24px;font-weight:300;font-variation-settings:"opsz" 36,"SOFT" 30}
-.email-sig .sig-info{flex:1;display:flex;flex-direction:column;gap:4px}
-.email-sig .sig-info .sig-name{font-family:'Fraunces',serif;font-size:16px;color:var(--bone);font-weight:300;line-height:1.1;font-variation-settings:"opsz" 36,"SOFT" 30}
-.email-sig .sig-info .sig-role{font-family:'Geist Mono',monospace;font-size:9px;color:var(--ember);letter-spacing:0.18em;text-transform:uppercase}
-.email-sig .sig-info .sig-meta{font-family:'Geist Mono',monospace;font-size:9px;color:var(--steel-4);letter-spacing:0.05em}
+.email-sig{width:380px;background:var(--carbon-2);border:1px solid var(--line);padding:22px 24px;display:flex;align-items:stretch;gap:22px}
+.email-sig .sig-mark{flex-shrink:0;display:flex;align-items:center}
+.email-sig .sig-mark .morelli-mark{mix-blend-mode:lighten}
+.email-sig .sig-divider{width:1px;background:var(--steel-2);align-self:stretch}
+.email-sig .sig-info{flex:1;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.email-sig .sig-info .sig-name{font-family:'Fraunces',serif;font-size:17px;color:var(--bone);font-weight:400;line-height:1.1;letter-spacing:-0.01em;font-variation-settings:"opsz" 36,"SOFT" 30;margin-bottom:2px}
+.email-sig .sig-info .sig-role{font-family:'Geist Mono',monospace;font-size:9px;color:var(--ember);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:10px}
+.email-sig .sig-info .sig-meta{font-family:'Geist Mono',monospace;font-size:10px;color:var(--steel-4);letter-spacing:0.04em;line-height:1.7}
 
 /* Instagram feed */
 .ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;width:340px;aspect-ratio:1/1}
@@ -2461,11 +2463,15 @@ footer{
           <h5>Firma de email</h5>
           <div class="app-stage">
             <div class="email-sig">
-              <div class="sig-mark">M</div>
+              <div class="sig-mark">
+                <div class="morelli-mark" style="width:110px;height:38px"></div>
+              </div>
+              <div class="sig-divider"></div>
               <div class="sig-info">
                 <span class="sig-name">Nombre Apellido</span>
                 <span class="sig-role">Director comercial</span>
                 <span class="sig-meta">+54 11 0000 0000</span>
+                <span class="sig-meta">nombre@morelli.com.ar</span>
                 <span class="sig-meta">morelli.com.ar</span>
               </div>
             </div>
